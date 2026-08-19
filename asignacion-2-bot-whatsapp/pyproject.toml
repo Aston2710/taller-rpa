@@ -1,0 +1,25 @@
+[project]
+name = "whatsapp-bot-rpa"
+version = "0.1.0"
+description = "Bot que envía un mensaje por WhatsApp Web con Playwright, con sesión persistente"
+authors = [
+    {name = "jredondo", email = "jredondo@mayoreo.biz"},
+]
+dependencies = ["playwright>=1.48", "keyring>=25.0"]
+requires-python = ">=3.11"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+whatsapp-bot = "whatsapp_bot.main:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+bot = "python -m whatsapp_bot.main"
+reset-number = "python -m whatsapp_bot.reset_number"

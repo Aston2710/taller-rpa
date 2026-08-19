@@ -1,12 +1,23 @@
+# --- asignacion-1-bot-solicitudes ---
+
 # Material de clase (copia vieja y duplicada del bot; el real es src/taller_rpa)
-Template/
-Template.zip
+asignacion-1-bot-solicitudes/Template/
+asignacion-1-bot-solicitudes/Template.zip
 
 # Salida generada por el bot en cada corrida (se recrea sola; ver utils.py).
 # Se versiona la carpeta data/output/ (vacía) para que exista tras el clone,
 # pero no su contenido. data/input/ SÍ se versiona completo.
-data/output/*
-!data/output/.gitkeep
+asignacion-1-bot-solicitudes/data/output/*
+!asignacion-1-bot-solicitudes/data/output/.gitkeep
+
+# --- asignacion-2-bot-whatsapp ---
+
+# Perfil persistente del navegador (cookies + localStorage + IndexedDB): es la
+# sesión activa de WhatsApp de quien la generó. NUNCA subir a un repo público.
+asignacion-2-bot-whatsapp/.session/
+
+# Capturas de diagnóstico del envío (número/mensaje visibles).
+asignacion-2-bot-whatsapp/debug/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
